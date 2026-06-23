@@ -148,21 +148,22 @@ html,body{height:100%;overflow:hidden;background:var(--navy);font-family:var(--s
 .insight-bar strong{color:var(--accent)}
 
 /* ─── SLIDE 05 — OUR SOLUTION ─── */
-#s05{background:#000;padding:64px 80px 80px}
-.solution-intro{max-width:620px;margin-bottom:40px}
-.solution-intro p{font-size:16px;color:rgba(255,255,255,.6);line-height:1.7}
-.service-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.svc{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:24px}
+#s05{background:#000;padding:48px 80px 80px}
+.solution-intro{max-width:760px;margin-bottom:28px}
+.solution-intro p{font-size:15px;color:rgba(255,255,255,.6);line-height:1.65}
+.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.svc{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:18px}
 .svc:hover{background:rgba(255,255,255,.09);transition:background .25s}
-.svc-num{font-size:11px;font-weight:600;letter-spacing:1.5px;color:var(--accent);margin-bottom:10px}
-.svc h3{font-size:17px;font-weight:600;color:#fff;margin-bottom:10px}
+.svc-num{font-size:10px;font-weight:600;letter-spacing:1.2px;color:var(--accent);margin-bottom:8px}
+.svc h3{font-size:15px;font-weight:600;color:#fff;margin-bottom:9px;line-height:1.25}
 .svc ul{list-style:none;padding:0}
-.svc ul li{font-size:13px;color:rgba(255,255,255,.5);padding:3px 0;padding-left:14px;position:relative}
-.svc ul li::before{content:'—';position:absolute;left:0;color:var(--accent2);font-size:11px}
-.svc-badge{display:inline-block;font-size:11px;font-weight:500;padding:3px 10px;border-radius:20px;margin-top:12px}
+.svc ul li{font-size:12px;color:rgba(255,255,255,.5);padding:2.5px 0;padding-left:13px;position:relative;line-height:1.35}
+.svc ul li::before{content:'—';position:absolute;left:0;color:var(--accent2);font-size:10px}
+.svc-badge{display:inline-block;font-size:10px;font-weight:500;padding:3px 9px;border-radius:20px;margin-top:11px}
 .badge-new{background:rgba(0,175,255,.15);color:var(--accent2)}
 .badge-core{background:rgba(255,80,0,.15);color:var(--accent)}
 .badge-strategic{background:rgba(128,0,255,.15);color:var(--purple)}
+.badge-tech{background:rgba(255,80,0,.18);color:var(--accent)}
 
 /* ─── SLIDE 06 — HAEFELE ─── */
 #s06{background:var(--light);padding:64px 80px 80px}
@@ -312,12 +313,16 @@ html,body{height:100%;overflow:hidden;background:var(--navy);font-family:var(--s
 .slide-sub{font-size:14px;color:var(--muted);margin-bottom:2px}
 .slide-sub.white{color:rgba(255,255,255,.45)}
 
+@media(max-width:1200px){
+  .service-grid{grid-template-columns:repeat(2,1fr)}
+}
 @media(max-width:900px){
   .cover-deco{display:none}
   .cover-h1{font-size:40px}
   #s01,#s02,#s03,#s04,#s05,#s06,#s07,#s08,#s09,#s10,#s11{padding:40px 28px 80px}
   .exec-grid,.market-row,.pain-grid,.service-grid,.fin-grid,.haf-grid,.tier-grid,.gtm-grid,.swot-grid,.ask-grid,.cover-meta,.ask-timeline-track{grid-template-columns:1fr}
   .market-row{grid-template-columns:1fr 1fr}
+  .service-grid{grid-template-columns:1fr 1fr}
 }
 </style>
 </head>
@@ -556,6 +561,30 @@ html,body{height:100%;overflow:hidden;background:var(--navy);font-family:var(--s
         <li>Market expansion readiness</li>
       </ul>
       <span class="svc-badge badge-new">New Offer</span>
+    </div>
+    <div class="svc" style="background:rgba(255,80,0,.07);border-color:rgba(255,80,0,.28)">
+      <div class="svc-num" style="color:var(--accent)">SERVICE 07</div>
+      <h3>Tech Stack Engineering &amp; Integration</h3>
+      <ul>
+        <li>DXP, CMS &amp; CRM platform implementation</li>
+        <li>Composable / MACH &amp; headless commerce</li>
+        <li>System &amp; API integration (ERP, CRM, e-comm)</li>
+        <li>Cloud, platform &amp; frontend engineering</li>
+        <li>Architecture consulting &amp; modernisation</li>
+      </ul>
+      <span class="svc-badge badge-tech">Expanded Offer</span>
+    </div>
+    <div class="svc" style="background:rgba(255,80,0,.07);border-color:rgba(255,80,0,.28)">
+      <div class="svc-num" style="color:var(--accent)">SERVICE 08</div>
+      <h3>Data &amp; AI Intelligence</h3>
+      <ul>
+        <li>AI strategy, roadmaps &amp; transformation</li>
+        <li>Agentic AI &amp; generative AI solutions</li>
+        <li>Customer Data Platform (CDP) &amp; architecture</li>
+        <li>Product &amp; predictive analytics, ML models</li>
+        <li>Trustworthy AI &amp; EU AI Act compliance</li>
+      </ul>
+      <span class="svc-badge badge-tech">Expanded Offer</span>
     </div>
   </div>
 </div>
